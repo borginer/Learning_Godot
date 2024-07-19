@@ -44,15 +44,17 @@ radius = 4.0
 height = 14.0
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 2
 script = ExtResource("1_06anj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 5
 position = Vector2(-1, -18)
 sprite_frames = SubResource("SpriteFrames_gmqoy")
 animation = &"Idle"
 autoplay = "Idle"
-frame = 3
-frame_progress = 0.6982
+frame = 2
+frame_progress = 0.98207
 offset = Vector2(1, 6)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
